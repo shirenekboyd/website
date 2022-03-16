@@ -2,13 +2,14 @@
     background: red;
 } */
 
+/* Makes things easier when setting up */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Custom properties, update these for my own design */
+/* Custom properties */
 
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
@@ -16,11 +17,10 @@
 
   --fw-reg: 300;
   --fw-bold: 900;
-
-  --clr-bg: #fff;
   --clr-dark: #1d1c1c;
   --clr-accent: #e01663;
 
+  /* font sizes in rem */
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -30,6 +30,7 @@
     0.125em 0.125 0.25em rgba(0, 0, 0, 0.15);
 }
 
+/* responsive styling based on browser size */
 @media (min-width: 800px) {
   :root {
     --fs-h1: 4.5rem;
@@ -47,7 +48,8 @@ html {
 
 body {
   background: var(--clr-light);
-  color: black;
+  color: var(--clr-dark);
+  /* color: black; */
   margin: 0;
   font-family: var(--ff--primary);
   font-size: var(--fs-body);

@@ -10,14 +10,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+    <script
+      src="https://kit.fontawesome.com/4aeb057dc2.js"
       crossorigin="anonymous"
-    />
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    /> -->
 
-    <!-- Update these with my own fonts -->
+    <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
@@ -51,6 +54,7 @@
     </header>
 
     <!-- Introduction -->
+    <!-- id for anchoring and class for styling -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
         <strong>Shirene Boyd</strong>
@@ -67,33 +71,35 @@
     <section class="my-services" id="services">
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
-        <!-- <h3>Add skill here</h3> -->
-        <p>
-          Enthusiastic Fullstack Developer located in West Texas and proficient
-          in JavaScript, HTML, and CSS. I have a background in responsive web
-          design and building RESTful APIs.
-        </p>
-      </div>
+        <div class="service">
+          <h3>Skills</h3>
+          <p>
+            JavaScript ES6, HTML, CSS3, React, React Hooks, Node.js, RESTful
+            APIs, Unit testing, Algorithms, Data structures, Node Package
+            Manager(NPM), PostgresSQL, Express.js
+          </p>
+        </div>
+        <!--close service-->
 
-      <div class="services">
-        <!-- <h3>Add skill here</h3> -->
-        <p>
-          I also have eight years of experience in education as a classroom
-          teacher. During my time as a teacher, I gained many useful skills such
-          as communicating effectively, time management, leadership, and team
-          collaboration.
-        </p>
-      </div>
+        <div class="service">
+          <h3>Tools</h3>
+          <p>
+            Mocha, Chai, Homebrew, Git, GitHub, Heroku, Visual Studio Code,
+            Kanban Board
+          </p>
+        </div>
 
-      <div class="services">
+        <!-- <div class="service"> -->
         <!-- <h3>Add skill here</h3> -->
-        <p>
-          Currently I'm preparing for interviews, working on side projects, and
-          honing my skills. My curiosity and hard work drive me to do my best
-          and be my best! I am a risk-taker, incredibly ambitious, and thrilled
-          to see where my coding journey leads me.
-        </p>
+        <!-- <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+            impedit fugit perspiciatis repudiandae esse vero. Inventore iure
+            deserunt distinctio explicabo itaque pariatur nam delectus
+            consequatur magnam temporibus, alias facere laudantium.
+          </p> -->
+        <!-- </div> -->
       </div>
+      <!--closes services-->
 
       <a href="#work" class="btn">My Work</a>
     </section>
@@ -106,16 +112,23 @@
       </p>
       <div class="about-me__body">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi,
-          omnis id, eos officia labore debitis corporis mollitia illo quod
-          possimus enim minima dignissimos! Qui necessitatibus blanditiis
-          reprehenderit eos alias.
+          Enthusiastic Fullstack Developer located in West Texas and proficient
+          in JavaScript, HTML, and CSS. I have a background in responsive web
+          design and building RESTful APIs.
         </p>
+
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos impedit
-          fugit perspiciatis repudiandae esse vero. Inventore iure deserunt
-          distinctio explicabo itaque pariatur nam delectus consequatur magnam
-          temporibus, alias facere laudantium.
+          I also have eight years of experience in education as a classroom
+          teacher. During my time as a teacher, I gained many useful skills such
+          as communicating effectively, time management, leadership, and team
+          collaboration.
+        </p>
+
+        <p>
+          Currently I'm preparing for interviews, working on side projects, and
+          honing my skills. My curiosity and hard work drive me to do my best
+          and be my best! I am a risk-taker, incredibly ambitious, and thrilled
+          to see where my coding journey leads me.
         </p>
       </div>
       <img
@@ -134,72 +147,101 @@
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
-        <a
-          href="https://github.com/shirenekboyd/flashcard-app-project"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-01.png"
-            alt="Flashcard-O-Matic"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">Flashcard-O-Matic</h3>
+          <a
+            href="https://github.com/shirenekboyd/flashcard-app-project"
+            class="portfolio__item"
+          >
+            <img
+              src="/img/portfolio-01.png"
+              alt="Flashcard-O-Matic"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
 
         <!-- Portfolio item 02 -->
-        <a
-          href="https://github.com/shirenekboyd/grubdash-project"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-02.png"
-            alt="GrubDash"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">GrubDash</h3>
+
+          <a
+            href="https://github.com/shirenekboyd/grubdash-project"
+            class="portfolio__item"
+          >
+            <img
+              src="img/portfolio-02.png"
+              alt="GrubDash"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
+
         <!-- Portfolio item 03 -->
-        <a
-          href="https://github.com/shirenekboyd/we-love-movies-project"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-03.png"
-            alt="We-Love-Movies"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">We-Love-Movies</h3>
+          <div></div>
+          <a
+            href="https://github.com/shirenekboyd/we-love-movies-project"
+            class="portfolio__item"
+          >
+            <img
+              src="img/portfolio-03.png"
+              alt="We-Love-Movies"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
+
         <!-- Portfolio item 04 -->
-        <a
-          href="https://github.com/shirenekboyd/starter-thinkfulcupid"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-04.png"
-            alt="Thinkful-Cupid"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">Thinkful-Cupid</h3>
+
+          <a
+            href="https://github.com/shirenekboyd/starter-thinkfulcupid"
+            class="portfolio__item"
+          >
+            <img
+              src="img/portfolio-04.png"
+              alt="Thinkful-Cupid"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
+
         <!-- Portfolio item 05 -->
-        <a
-          href="https://github.com/shirenekboyd/pomodoro-project"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-05.png"
-            alt="Pomodoro-Timer"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">Pomodoro-Timer</h3>
+
+          <a
+            href="https://github.com/shirenekboyd/pomodoro-project"
+            class="portfolio__item"
+          >
+            <img
+              src="img/portfolio-05.png"
+              alt="Pomodoro-Timer"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
+
         <!-- Portfolio item 06 -->
-        <a
-          href="https://github.com/shirenekboyd/restaurant-reservations-project"
-          class="portfolio__item"
-        >
-          <img
-            src="img/portfolio-06.png"
-            alt="Restaurant-Reservations-System"
-            class="portfolio__img"
-          />
-        </a>
+        <div>
+          <h3 class="section__title section__title--work">
+            Restaurant-Reservations-System
+          </h3>
+          <div></div>
+          <a
+            href="https://github.com/shirenekboyd/restaurant-reservations-project"
+            class="portfolio__item"
+          >
+            <img
+              src="img/portfolio-06.png"
+              alt="Restaurant-Reservations-System"
+              class="portfolio__img"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -214,18 +256,18 @@
             ><i class="fa-brands fa-github"></i
           ></a>
         </li>
-        <li class="social-list__item">
+        <!-- <li class="social-list__item">
           <a class="social-list__link" href="https://instagram.com"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-        </li>
-        <li class="social-list__item">
+        </li> -->
+        <!-- <li class="social-list__item">
           <a
             class="social-list__link"
             href="hhttps://www.facebook.com/shirenekadkhodai"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-        </li>
+        </li> -->
         <li class="social-list__item">
           <a
             class="social-list__link"
