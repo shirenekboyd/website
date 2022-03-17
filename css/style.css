@@ -26,8 +26,8 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0.125 0.25em rgba(0, 0, 0, 0.15);
+  --bs: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* responsive styling based on browser size */
@@ -113,8 +113,13 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+/* use margins and padding on text size using ems is handy */
 .section__title {
   margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
 }
 
 .section__title--intro strong {
@@ -129,7 +134,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
-  padding: 0.25em;
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -189,14 +194,14 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
 }
 
 .nav-open .nav {
@@ -208,7 +213,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -235,14 +240,18 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  bottom: 6px;
+}
 
 /* Intro section */
 
@@ -252,6 +261,7 @@ header {
 
 .intro__img {
   box-shadow: var(--bs);
+  
 }
 
 .section__subtitle--intro {
@@ -307,11 +317,11 @@ header {
 .section__title--services::after {
   content: "";
   display: block;
-  width: 2em;
+  width: 3em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
-  opacity: 0.25;
+  background: currentColor;
+  opacity: 0.75;
 }
 
 .services {
@@ -336,25 +346,24 @@ header {
   }
 }
 
+/* About Me section */
+
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-me__img {
-  box-shadow: var(--bs);
-}
-
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
     grid-template-areas:
       "title img"
       "subtitle img"
       "text img";
     grid-column-gap: 2em;
   }
+
   .section__title--about {
     grid-area: title;
   }
@@ -367,6 +376,12 @@ header {
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-row: 1 / -1;
+    grid-column: 1fr 200px;
+    box-shadow: var(--bs);
   }
 
   .about-me__body {
