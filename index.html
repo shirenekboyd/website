@@ -10,21 +10,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+    <script
+      src="https://kit.fontawesome.com/4aeb057dc2.js"
       crossorigin="anonymous"
-    />
+    ></script>
 
-    <!-- Update these with my own fonts -->
+    <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
       <div class="logo">
@@ -51,11 +49,12 @@
     </header>
 
     <!-- Introduction -->
+    <!-- id for anchoring and class for styling -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
         <strong>Shirene Boyd</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">fullstack dev</p>
+      <p class="section__subtitle section__subtitle--intro">Full Stack Dev</p>
       <img
         src="img/dev-shirene-01.png"
         alt="a picture of Shirene Boyd smiling"
@@ -67,34 +66,25 @@
     <section class="my-services" id="services">
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
-        <h3>Add skill here</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-          exercitationem ullam est, numquam consequuntur, tenetur dolore odio
-          odit quis, beatae amet! Aperiam est incidunt deleniti accusamus,
-          aliquam voluptate ut dolor?
-        </p>
-      </div>
+        <div class="service">
+          <h3>Skills</h3>
+          <p>
+            JavaScript ES6, HTML, CSS3, React, React Hooks, Node.js, RESTful
+            APIs, Unit testing, Algorithms, Data structures, Node Package
+            Manager(NPM), PostgresSQL, Express.js
+          </p>
+        </div>
+        <!--close service-->
 
-      <div class="services">
-        <h3>Add skill here</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis
-          repudiandae placeat nihil quisquam explicabo totam, officiis incidunt
-          perspiciatis tenetur ipsam provident blanditiis et eveniet, doloremque
-          consequuntur eligendi repellendus error!
-        </p>
+        <div class="service">
+          <h3>Tools</h3>
+          <p>
+            Mocha, Chai, Homebrew, Git, GitHub, Heroku, Visual Studio Code,
+            Kanban Board
+          </p>
+        </div>
       </div>
-
-      <div class="services">
-        <h3>Add skill here</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          deleniti praesentium eveniet modi id, dolor ratione. Architecto
-          sapiente nisi dolores, repellat nam eius nostrum consequuntur
-          veritatis cum tempore qui esse!
-        </p>
-      </div>
+      <!--closes services-->
 
       <a href="#work" class="btn">My Work</a>
     </section>
@@ -102,67 +92,92 @@
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">
+        Developer based out of Midland, TX
+      </p>
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>
+          Enthusiastic Fullstack Developer located in West Texas and proficient
+          in JavaScript, HTML, and CSS. I have a background in responsive web
+          design and building RESTful APIs.
+        </p>
+
+        <p>
+          I also have eight years of experience in education as a classroom
+          teacher. During my time as a teacher, I gained many useful skills such
+          as communicating effectively, time management, leadership, and team
+          collaboration.
+        </p>
+
+        <p>
+          Currently I'm preparing for interviews, working on side projects, and
+          honing my skills. My curiosity and hard work drive me to do my best
+          and be my best! I am a risk-taker, incredibly ambitious, and thrilled
+          to see where my coding journey leads me.
+        </p>
       </div>
-      <img src="img/dev-shirene-02.png" alt="Shirene black and white" />
+      <img
+        src="img/dev-shirene-02.png"
+        alt="Shirene at her desk black and white"
+        class="about-me__img"
+      />
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My Work</h2>
-      <p class="section__subtitle">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis fugit
-        consequuntur ullam nemo esse cum eligendi ducimus. Quis molestiae,
-        aperiam, nostrum porro fugiat magni beatae nisi eaque accusamus labore
-        culpa.
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle-work">
+        A selection of my range of work.
       </p>
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
-            src="img/portfolio-01.png"
+            src="/img/portfolio-01.png"
             alt="Flashcard-O-Matic"
             class="portfolio__img"
           />
         </a>
+
         <!-- Portfolio item 02 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item2.html" class="portfolio__item">
           <img
             src="img/portfolio-02.png"
             alt="GrubDash"
             class="portfolio__img"
           />
         </a>
+
         <!-- Portfolio item 03 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item3.html" class="portfolio__item">
           <img
             src="img/portfolio-03.png"
             alt="We-Love-Movies"
             class="portfolio__img"
           />
         </a>
+
         <!-- Portfolio item 04 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item4.html" class="portfolio__item">
           <img
             src="img/portfolio-04.png"
             alt="Thinkful-Cupid"
             class="portfolio__img"
           />
         </a>
+
         <!-- Portfolio item 05 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item5.html" class="portfolio__item">
           <img
             src="img/portfolio-05.png"
             alt="Pomodoro-Timer"
             class="portfolio__img"
           />
         </a>
+
         <!-- Portfolio item 06 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item6.html" class="portfolio__item">
           <img
             src="img/portfolio-06.png"
             alt="Restaurant-Reservations-System"
@@ -173,23 +188,38 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:shirenekadkhodai@gmail.com" class="footer__link"
         >shirenekadkhodai@gmail.com</a
       >
-      <ul class="social-list"></ul>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://codepen.io">a</a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://dribble.com">b</a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://twitter.com">c</a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com">d</a>
-      </li>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/shirenekboyd"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <!-- <li class="social-list__item">
+          <a class="social-list__link" href="https://instagram.com"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li> -->
+        <!-- <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="hhttps://www.facebook.com/shirenekadkhodai"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li> -->
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/shirene-boyd"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
