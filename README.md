@@ -1,6 +1,6 @@
 # Portfolio 1.0
 
-![Portfolio Image](./path-to-screenshot-of-your-portfolio)
+![Portfolio Image](img/Portfolio1.0.png)
 
 This project is my personal portfolio which showcases my skills, experiences and projects.
 
