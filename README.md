@@ -1,6 +1,6 @@
 # Portfolio 1.0
 
-![Portfolio Image](img/Portfolio1.0.png)
+![Portfolio Image](img/portfolio1.0.png)
 
 This project is my personal portfolio which showcases my skills, experiences and projects.
 
@@ -22,3 +22,11 @@ The project uses the following technologies:
 - Hamburger menu on mobile devices
 - Smooth scrolling
 
+## Usage
+
+https://github.com/shirenekboyd/website/assets/89878197/c5db1a95-eb85-4271-889e-74555f5222d6
+
+## Acknowledgements
+
+This project was built with the help of the following external tutorial:
+[Portfolio Website Tutorial](https://www.youtube.com/watch?v=_xkSvufmjEs&list=PL-n8uigEluHQuxJX8esVTLV2aV12D-R_u&index=3&t=601s)
