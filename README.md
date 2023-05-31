@@ -24,7 +24,11 @@ The project uses the following technologies:
 
 ## Usage
 
-https://github.com/shirenekboyd/website/assets/89878197/c5db1a95-eb85-4271-889e-74555f5222d6
+
+
+https://github.com/shirenekboyd/website/assets/89878197/701a091f-20c1-40ee-acb8-66bcc9dcd8d1
+
+
 
 ## Acknowledgements
 
